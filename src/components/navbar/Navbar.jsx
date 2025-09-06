@@ -151,6 +151,7 @@ const Navbar = () => {
                   {openSubMenu === menu && (
                     <div className="pl-4 mt-2 space-y-2 animate-fadeIn">
                       {menus[menu].map((item, i) => (
+                        <NavLink to={`${window?.location?.origin}${item?.link}`}>
                         <div
                           key={i}
                           className="flex items-center gap-3 text-md cursor-pointer hover:text-blue-600 transition"
@@ -158,6 +159,7 @@ const Navbar = () => {
                           <img src={item.icon} alt="icon" className="w-5 h-5" />
                           {item.name}
                         </div>
+                        </NavLink>
                       ))}
                     </div>
                   )}
