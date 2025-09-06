@@ -46,7 +46,7 @@ export default function Project() {
   return (
     <section className="px-6  overflow-x-none no-scrollbar py-12 md:px-12 lg:px-20">
       {/* Section Heading */}
-      <h2 className="text-center overflow-x-none  text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-blue-800 to-blue-500 bg-clip-text text-transparent mb-10">
+      <h2 className="text-center overflow-x-none  text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 bg-clip-text text-transparent mb-10">
         PROJECT
       </h2>
 

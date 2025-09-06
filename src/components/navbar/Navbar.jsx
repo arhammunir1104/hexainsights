@@ -10,33 +10,33 @@ const Navbar = () => {
   // Each menu with sub-items + unique icons
   const menus = {
     Services: [
-      { name: "Enterprise Software Development", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620861.png" },
-      { name: "Mobile App Development", icon: "https://cdn-icons-png.flaticon.com/512/888/888859.png" },
-      { name: "Dedicated Development Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png" },
-      { name: "IT Consulting", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" },
-      { name: "Digital Transformation", icon: "https://cdn-icons-png.flaticon.com/512/3050/3050525.png" },
-      { name: "UI / UX Design", icon: "https://cdn-icons-png.flaticon.com/512/1829/1829586.png" },
-      { name: "QA & Testing", icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png" },
-      { name: "Design LAB", icon: "https://cdn-icons-png.flaticon.com/512/3342/3342137.png" },
+      { name: "Enterprise Software Development", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620861.png", link: "/service"  },
+      { name: "Mobile App Development", icon: "https://cdn-icons-png.flaticon.com/512/888/888859.png" , link: "/service" },
+      { name: "Dedicated Development Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png", link: "/service"  },
+      { name: "IT Consulting", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" , link: "/service" },
+      { name: "Digital Transformation", icon: "https://cdn-icons-png.flaticon.com/512/3050/3050525.png", link: "/service"  },
+      { name: "UI / UX Design", icon: "https://cdn-icons-png.flaticon.com/512/1829/1829586.png", link: "/service"  },
+      { name: "QA & Testing", icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png", link: "/service"  },
+      { name: "Design LAB", icon: "https://cdn-icons-png.flaticon.com/512/3342/3342137.png", link: "/service"  },
     ],
     Industries: [
-      { name: "Finance", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135706.png" },
-      { name: "Healthcare", icon: "https://cdn-icons-png.flaticon.com/512/2966/2966488.png" },
-      { name: "E-commerce", icon: "https://cdn-icons-png.flaticon.com/512/3081/3081823.png" },
-      { name: "Education", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png" },
+      { name: "Finance", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135706.png",link: "/industry"  },
+      { name: "Healthcare", icon: "https://cdn-icons-png.flaticon.com/512/2966/2966488.png",link: "/industry" },
+      { name: "E-commerce", icon: "https://cdn-icons-png.flaticon.com/512/3081/3081823.png",link: "/industry" },
+      { name: "Education", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",link: "/industry" },
     ],
     "Our Work": [
-      { name: "Case Studies", icon: "https://cdn-icons-png.flaticon.com/512/1484/1484845.png" },
-      { name: "Portfolio", icon: "https://cdn-icons-png.flaticon.com/512/1828/1828884.png" },
+      { name: "Case Studies", icon: "https://cdn-icons-png.flaticon.com/512/1484/1484845.png",link: "/work" },
+      { name: "Portfolio", icon: "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",link: "/work"  },
     ],
     "About Us": [
-      { name: "Company", icon: "https://cdn-icons-png.flaticon.com/512/1041/1041916.png" },
-      { name: "Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png" },
-      { name: "Careers", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" },
+      { name: "Company", icon: "https://cdn-icons-png.flaticon.com/512/1041/1041916.png",link: "/about"  },
+      { name: "Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png",link: "/about"  },
+      { name: "Careers", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",link: "/about"  },
     ],
     Insight: [
-      { name: "Blog", icon: "https://cdn-icons-png.flaticon.com/512/893/893292.png" },
-      { name: "Resources", icon: "https://cdn-icons-png.flaticon.com/512/3176/3176366.png" },
+      { name: "Blog", icon: "https://cdn-icons-png.flaticon.com/512/893/893292.png",link: "/insights"  },
+      { name: "Resources", icon: "https://cdn-icons-png.flaticon.com/512/3176/3176366.png",link: "/insights"  },
     ],
   };
 
@@ -78,6 +78,7 @@ const Navbar = () => {
                   className={`absolute top-10 left-0 w-max max-w-[90vw] bg-white shadow-lg rounded-lg p-6 grid ${cols} gap-3 z-50`}
                 >
                   {items.map((item, i) => (
+                    <NavLink to={`${window?.location?.origin}${item?.link}`}>
                     <div
                       key={i}
                       className="flex p-2 items-center gap-2 hover:text-blue-600 text-sm cursor-pointer transition"
@@ -85,6 +86,7 @@ const Navbar = () => {
                       <img src={item.icon} alt="icon" className="w-5 h-5" />
                       {item.name}
                     </div>
+                    </NavLink>
                   ))}
                 </div>
               )}

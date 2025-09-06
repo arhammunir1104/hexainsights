@@ -10,6 +10,8 @@ import Faq from './Faq'
 import Discover from './Discover'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
+import Team from './Team'
+import CTA from './CTA'
 
 function HeroBackground() {
   return (
@@ -22,7 +24,6 @@ function HeroBackground() {
 
       {/* Content */}
       <div className="relative z-10">
-        <Navbar />
         <HomepageHero />
       </div>
       <TrustedBy  />
@@ -34,6 +35,8 @@ function HeroBackground() {
       <Discover />
       <Testimonials />
       <Contact />
+      <Team />
+      <CTA />
     </div>
   )
 }
