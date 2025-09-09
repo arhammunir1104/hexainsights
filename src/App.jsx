@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import ServicePage from './pages/ServicePage';
 import IndustryPage from './pages/IndustryPage';
+import WorkPage from './pages/WorkPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route path="/" element={<HomePage />} />
     <Route path="/service" element={<ServicePage />} />
     <Route path="/industry" element={<IndustryPage />} />
+    <Route path="/work" element={<WorkPage />} />
     </Routes>
 
     <Footer />

@@ -60,13 +60,13 @@ const App = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.158l-2.01 1.207a.997.997 0 00-.712 1.258l.498 1.494a.997.997 0 001.258.712l1.207-2.01a1 1 0 011.158-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z" />
                             </svg>
-                            +94 713249222
+                            +92 300 0895990
                         </div>
                         <div className="flex items-center my-2 text-black text-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            hello@courtney.lk
+                            info@hexainsights.com
                         </div>
                         <div className="flex items-start my-4 text-black text-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 mt-1 text-black flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,7 +74,7 @@ const App = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
                             <p>
-                                Courtney Lanka (Private) Limited<br/>Level 35<br/>World Trade Center<br/>Colombo 01
+                            UAE - Al Wahda Street, GIBCA, Dubai<br />Pakistan - North Karachi, Sector 9, Karachi
                             </p>
                         </div>
                     </div>
@@ -110,8 +110,8 @@ const App = () => {
                             </a>
                         ))}
                     </div>
-                    <p className="text-center  font-[Quicksand]  text-gray-400 text-sm border-t pt-3 border-gray-200 ">
-                        &copy; COPYRIGHT 2025 HEXAVIDEOS. DEVELOPED BY <a href="http://codenthic.com/" target='_blank' className="text-gray-500 underline hover:text-blue-500">Codenthic.COM</a>
+                    <p className="text-left font-bold  font-[Quicksand]  text-black text-sm border-t pt-3 border-gray-200 ">
+                        &copy; Copyright 2025 Hexainsights. Developed by <a href="http://codenthic.com/" target='_blank' className="text-black underline hover:text-blue-500">Codenthic.COM</a>
                     </p>
                 </div>
             </div>
