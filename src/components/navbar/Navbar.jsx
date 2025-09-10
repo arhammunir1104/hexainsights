@@ -151,7 +151,10 @@ const Navbar = () => {
                   {openSubMenu === menu && (
                     <div className="pl-4 mt-2 space-y-2 animate-fadeIn">
                       {menus[menu].map((item, i) => (
-                        <NavLink to={`${window?.location?.origin}${item?.link}`}>
+                        <NavLink to={`${window?.location?.origin}${item?.link}`} onClick={() => {
+                          setDrawerOpen(false)
+                          setOpenSubMenu(openSubMenu === menu ? null : menu)
+                          }}>
                         <div
                           key={i}
                           className="flex items-center gap-3 text-md cursor-pointer hover:text-blue-600 transition"

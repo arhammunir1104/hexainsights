@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeroBackground from '../components/homepage/HeroBackground'
+import Reloader from '../components/Reloader/Reloader';
 
 function HomePage() {
+  const [isReload, setIsReload] = useState(true);
+
+  useEffect(()=>{
+
+    setTimeout(()=>{
+      setIsReload(false)
+    },1000)
+
+  },[])
   return (
+    isReload ? 
+    <>
+    <Reloader />
+    </> 
+    : 
+    <>
     <div>
       <HeroBackground />
     </div>
+    </>
   )
 }
 
