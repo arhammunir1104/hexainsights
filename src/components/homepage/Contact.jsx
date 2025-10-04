@@ -6,7 +6,7 @@ const Contact = () => {
       {/* Background shapes and lines */}
       <img src='/home-contact/img1.png' className="absolute top-4 left-[-5%] -translate-x-1/4 -translate-y-1/4 text-[#0051FF]" fill="none" />
       {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-[#0051FF] rounded-full" style={{ opacity: 0.2 }}></div> */}
-      <img src='/home-contact/img4.png' className="absolute z-[10] bottom-[-10%] right-[40%] w-32 h-32 text-[#0051FF]" fill="none" />
+      {/* <img src='/home-contact/img4.png' className="absolute z-[10] bottom-[-10%] right-[40%] w-32 h-32 text-[#0051FF]" fill="none" /> */}
       <img src='/home-contact/img2.png' className="absolute top-[40%] right-12 flex z-10 w-40 h-40 h-24 text-[#0051FF]" fill="none" />
        
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">

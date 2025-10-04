@@ -10,14 +10,14 @@ const Navbar = () => {
   // Each menu with sub-items + unique icons
   const menus = {
     Services: [
-      { name: "Enterprise Software Development", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620861.png", link: "/service"  },
-      { name: "Mobile App Development", icon: "https://cdn-icons-png.flaticon.com/512/888/888859.png" , link: "/service" },
-      { name: "Dedicated Development Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png", link: "/service"  },
-      { name: "IT Consulting", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" , link: "/service" },
-      { name: "Digital Transformation", icon: "https://cdn-icons-png.flaticon.com/512/3050/3050525.png", link: "/service"  },
-      { name: "UI / UX Design", icon: "https://cdn-icons-png.flaticon.com/512/1829/1829586.png", link: "/service"  },
-      { name: "QA & Testing", icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png", link: "/service"  },
-      { name: "Design LAB", icon: "https://cdn-icons-png.flaticon.com/512/3342/3342137.png", link: "/service"  },
+      { name: "Enterprise Software Development", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620861.png", link: "/service/Enterprise Software Development"  },
+      { name: "Mobile App Development", icon: "https://cdn-icons-png.flaticon.com/512/888/888859.png" , link: "/service/Mobile App Development" },
+      { name: "Dedicated Development Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png", link: "/service/Dedicated Development Team"  },
+      { name: "IT Consulting", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" , link: "/service/IT Consulting" },
+      { name: "Digital Transformation", icon: "https://cdn-icons-png.flaticon.com/512/3050/3050525.png", link: "/service/Digital Transformation"  },
+      { name: "UI / UX Design", icon: "https://cdn-icons-png.flaticon.com/512/1829/1829586.png", link: "/service/UI\\UX Design"  },
+      { name: "QA & Testing", icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png", link: "/service/QA & Testing"  },
+      { name: "Design LAB", icon: "https://cdn-icons-png.flaticon.com/512/3342/3342137.png", link: "/service/Design LAB"  },
     ],
     Industries: [
       { name: "Finance", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135706.png",link: "/industry"  },
@@ -34,9 +34,8 @@ const Navbar = () => {
       { name: "Team", icon: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png",link: "/about"  },
       { name: "Careers", icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",link: "/about"  },
     ],
-    Insight: [
-      { name: "Blog", icon: "https://cdn-icons-png.flaticon.com/512/893/893292.png",link: "/insights"  },
-      { name: "Resources", icon: "https://cdn-icons-png.flaticon.com/512/3176/3176366.png",link: "/insights"  },
+    Insights: [
+      { name: "Blog", icon: "https://cdn-icons-png.flaticon.com/512/893/893292.png",link: "/blog"  },
     ],
   };
 
@@ -46,7 +45,7 @@ const Navbar = () => {
       <div  className="flex w-[40%] h-[80%] lg:w-[15%] items-center gap-2 text-black font-bold text-xl">
        <NavLink to={"/"}> 
         <img
-          src="./logo.png"
+          src="/public/logo.png"
           alt="logo"
           className="h-full w-full"
         />
@@ -93,10 +92,11 @@ const Navbar = () => {
             </div>
           );
         })}
-
+        <NavLink to={"/contact"}>
         <button className="px-5 py-2 cursor-pointer rounded-lg border-2 border-blue-500 text-blue-600 hover:bg-blue-600 hover:text-white transition">
           Contact Us
         </button>
+        </NavLink>
       </div>
 
       {/* Mobile Menu */}
@@ -169,9 +169,12 @@ const Navbar = () => {
                 </div>
               ))}
 
+              {/* Contact Us Button */} 
+              <NavLink to={"/contact"}>
               <button className="w-full mt-4 px-5 py-2 cursor-pointer rounded-lg border-2 border-blue-500 text-blue-600 hover:bg-blue-600 hover:text-white transition">
                 Contact Us
               </button>
+              </NavLink>
             </div>
           </div>
         </div>

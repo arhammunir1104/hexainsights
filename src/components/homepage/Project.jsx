@@ -2,15 +2,15 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React, { useRef, useState } from "react";
 
 const projects = [
-  { id: 1, title: "VR training app for a manufacturing company", image: "/home-projects/img1.png", tags: ["3D", "AR/VR/MR", "2D"] },
-  { id: 2, title: "VR training app for a construction company", image: "/home-projects/img2.png", tags: ["3D", "Simulation", "Mobile"] },
-  { id: 3, title: "VR training app for a healthcare company", image: "/home-projects/img3.png", tags: ["3D", "AR", "2D"] },
-  { id: 4, title: "VR training app for a logistics company", image: "/home-projects/img1.png", tags: ["VR", "Training", "Enterprise"] },
-  { id: 5, title: "VR training app for an automotive company", image: "/home-projects/img2.png", tags: ["3D", "Simulation", "VR"] },
-  { id: 6, title: "VR training app for an oil & gas company", image: "/home-projects/img3.png", tags: ["Enterprise", "AR", "3D"] },
+  { id: 1, title: "VR training app for a manufacturing company", image: "/home-projects/img1.png", tags: ["3D", "E-Commerce", "Shopify"] },
+  { id: 2, title: "VR training app for a construction company", image: "/home-projects/img2.png", tags: ["GSAP", "E-Commerce", "WordPress"] },
+  { id: 3, title: "VR training app for a healthcare company", image: "/home-projects/img3.png", tags: ["GSAP", "WordPress"] },
+  { id: 4, title: "VR training app for a logistics company", image: "/home-projects/img1.png", tags: ["E-Commerce", "Shopify", ] },
+  { id: 5, title: "VR training app for an automotive company", image: "/home-projects/img2.png", tags: ["WordPress"] },
+  { id: 6, title: "VR training app for an oil & gas company", image: "/home-projects/img3.png", tags: ["E-Commerce","3D", "GSAP", "Shopify"] },
 ];
 
-export default function Project() {
+export default function Project({title}) {
   const sliderRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -47,7 +47,7 @@ export default function Project() {
     <section className="px-6  overflow-x-none no-scrollbar py-12 md:px-12 lg:px-20">
       {/* Section Heading */}
       <h2 className="text-center overflow-x-none  text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 bg-clip-text text-transparent mb-10">
-        PROJECT
+      {title? title : "OUR PROJECTS"}
       </h2>
 
       {/* Horizontal Drag Scroll */}

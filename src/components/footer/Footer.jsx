@@ -54,7 +54,7 @@ const App = () => {
                             </NavLink>
                         </div>
                         <p className="text-black leading-relaxed mb-4 text-sm">
-                            Expertly trained, battle-tested, elite software developers on demand
+                            {/* Expertly trained, battle-tested, elite software developers on demand */}
                         </p>
                         <div className="flex items-center my-2 text-black text-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">

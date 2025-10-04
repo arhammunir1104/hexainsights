@@ -8,6 +8,9 @@ import Navbar from './components/navbar/Navbar';
 import ServicePage from './pages/ServicePage';
 import IndustryPage from './pages/IndustryPage';
 import WorkPage from './pages/WorkPage';
+import About from './pages/About';
+import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
 
 
 function App() {
@@ -17,9 +20,12 @@ function App() {
     <Navbar />
     <Routes>
     <Route path="/" element={<HomePage />} />
-    <Route path="/service" element={<ServicePage />} />
+    <Route path="/service/:serviceType" element={<ServicePage />} />
     <Route path="/industry" element={<IndustryPage />} />
     <Route path="/work" element={<WorkPage />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/contact" element={<ContactPage />} />
+    <Route path="/blog" element={<BlogPage />} />
     </Routes>
 
     <Footer />

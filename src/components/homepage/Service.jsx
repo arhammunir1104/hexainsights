@@ -1,34 +1,35 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Services() {
   const services = [
     {
       title: "Custom Software Development",
-      img: "home-service/img1.png",
+      img: "/public/home-service/img1.png",
     },
     {
       title: "Web Development (React, Next.js, Vue.js)",
-      img: "home-service/img2.png",
+      img: "/public/home-service/img2.png",
     },
     {
       title: "Mobile App Development (iOS, Android, Flutter)",
-      img: "home-service/img3.png",
+      img: "/public/home-service/img3.png",
     },
     {
       title: "Enterprise Software & SaaS Solutions",
-      img: "home-service/img4.png",
+      img: "/public/home-service/img4.png",
     },
     {
       title: "AI & Automation",
-      img: "home-service/img5.png",
+      img: "/public/home-service/img5.png",
     },
     {
       title: "UI/UX Design (Figma-Based Modern Interfaces)",
-      img: "home-service/img6.png",
+      img: "/public/home-service/img6.png",
     },
     {
       title: "Mobile App Development (iOS, Android, Flutter)",
-      img: "home-service/img7.png",
+      img: "/public/home-service/img7.png",
     },
   ];
 
@@ -44,8 +45,8 @@ export default function Services() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#463F87] uppercase tracking-wide">
           OUR SERVICES
         </h2>
-        <p className="text-2xl md:text-4xl font-medium text-[#463F87]">
-          We Build Future-Ready Digital Solutions
+        <p className="text-2xl md:text-3xl font-medium text-[#463F87]">
+        Delivering Future-Ready Digital Solutions & Your Partner for Next-Gen Digital Solutions
         </p>
       </div>
 
@@ -69,13 +70,16 @@ export default function Services() {
           </div>
         ))}
 
+
 <div
             className="shadow-md flex items-center justify-center cursor-pointer   rounded-2xl hover:shadow-xl transition duration-300"
           >
             <div className="flex items-center w-[80%] mx-[10%]cursor-pointer  justify-center ">
+            <NavLink to="#">
             <button className="bg-gradient-to-r from-blue-800 via-blue-800 to-blue-600 text-[.7rem] cursor-pointer  hover:bg-[#352d6d] text-white px-6 py-3 rounded-xl shadow-lg">
-            Explore Our Services →
+            Get Your Custom Estimate →
             </button>
+            </NavLink>
             </div>
           </div>
       </div>

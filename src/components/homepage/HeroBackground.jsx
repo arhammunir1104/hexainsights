@@ -29,14 +29,14 @@ function HeroBackground() {
       <TrustedBy  />
       <About />
       <Services />
+      <Discover />
       <Project />
       <See />
-      <Faq />
-      <Discover />
       <Testimonials />
-      <Contact />
       <Team />
-      <CTA />
+      <Faq />
+      <Contact />
+      {/* <CTA /> */}
     </div>
   )
 }

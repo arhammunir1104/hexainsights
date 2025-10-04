@@ -45,7 +45,7 @@ const Faq = () => {
             Frequently Ask Questions
           </h2> */}
           <h3 className="text-3xl font-[Quicksand] md:text-4xl lg:text-5xl font-bold text-[#070778] tracking-tight">
-            FREQUENTLY ASK QUESTION
+            FREQUENTLY ASKED QUESTIONS
           </h3>
         </div>
 

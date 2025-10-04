@@ -31,7 +31,7 @@ const technologies = [
   { title: 'Node.js', image: '/service/t4.png'},
 ];
 
-const ServiceStaffComponent = () => {
+const ServiceStaffComponent = ({show = true}) => {
   return (
     <>
     <div className="bg-[#F9F9F9] text-gray-800 font-sans p-8 lg:p-16">
@@ -62,6 +62,8 @@ const ServiceStaffComponent = () => {
         ))}
       </div>
 </div>
+{
+  show &&
     <div className='my-5'>
          {/* Technologies Section */}
       <div className="mt-16 text-center">
@@ -75,15 +77,14 @@ const ServiceStaffComponent = () => {
                 src={tech.image} 
                 alt={tech.title} 
                 className="h-12 mb-2" 
-              />
+                />
               <span className="text-lg font-semibold">{tech.title}</span>
             </div>
           ))}
         </div>
       </div>
-
-
     </div>
+              }
     </>
   );
 };
